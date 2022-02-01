@@ -15,5 +15,5 @@ class Article(models.Model):
     body = models.TextField()
     created_date = models.DateField(date.today())
     image = models.ImageField(default="profile_pics/default.xyz", upload_to="profile_pics")
-    catogory = models.ForeignKey(Category, on_delete=models.CASCADE)
+    category = models.ForeignKey(Category, on_delete=models.CASCADE)
     user = models.ForeignKey(User, on_delete=models.CASCADE)
